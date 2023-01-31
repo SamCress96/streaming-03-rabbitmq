@@ -94,4 +94,6 @@ Each of the version 2 programs include an error as well.
 
 ## Multiple Terminals
 ![v1](https://user-images.githubusercontent.com/111606778/215893121-ef70b15d-7bb6-4a1d-90bf-5f189ac7fe41.png)
+![v2](https://user-images.githubusercontent.com/111606778/215893256-2787d0e1-08bb-499a-8a8d-f73a847e886f.png)
+
 
