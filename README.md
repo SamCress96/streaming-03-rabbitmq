@@ -1,4 +1,4 @@
-# streaming-03-rabbitmq Samantha Cress 1/31/2022
+# streaming-03-rabbitmq Samantha Cress 1/31/2023
 
 Get started with RabbitMQ, a message broker, that enables multiple processes to communicate reliably through an intermediary
 
@@ -38,7 +38,8 @@ Once it runs and finishes, we can reuse the terminal.
 1. Run the file.
 
 You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? It will not terminate on its one, as there no code to close the connection. It will continue to wait to recieve messages. 
+Once it runs successfully, will it terminate on its own? How do you know? 
+     It will not terminate on its one, as there is no code to close the connection. It will continue to wait to recieve messages. 
 As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
@@ -76,16 +77,19 @@ Each of the version 2 programs include an error as well.
 1. Modify the docstrings on all your files.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
-1. Imports should be one per line - why?  Improves readability. 
-1. Then, define your functions.
-1. Functions are reuable logic blocks.
-1. Everything the function needs comes in through the arguments.
-1. A function may - or may not - return a value. 
-1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection? I belive the only file that won't close the connection is v1_listen_for_message, as it does not contain connection.close()
-1. Search GitHub for if __name__ == "__main__": 
-1. How many hits did you get? 26 million
-1. Learn and understand this common Python idiom.
+1. Imports should be one per line - why?  
+   Improves readability. 
+3. Then, define your functions.
+4. Functions are reuable logic blocks.
+5. Everything the function needs comes in through the arguments.
+6. A function may - or may not - return a value. 
+7. When we open a connection, we should close the connection. 
+8. Which of the 4 files will always close() the connection? 
+   I belive the only file that won't close the connection is v1_listen_for_message, as it does not contain connection.close()
+3. Search GitHub for if __name__ == "__main__": 
+4. How many hits did you get? 
+   26 million
+6. Learn and understand this common Python idiom.
 
 ## Reference
 
