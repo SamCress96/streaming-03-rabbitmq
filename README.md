@@ -93,5 +93,5 @@ Each of the version 2 programs include an error as well.
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
+![v1](https://user-images.githubusercontent.com/111606778/215893121-ef70b15d-7bb6-4a1d-90bf-5f189ac7fe41.png)
 
-![Mac Example](screenshot.png)
