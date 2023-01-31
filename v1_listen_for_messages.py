@@ -1,8 +1,7 @@
 """
 
-Always customize this docstring. 
-
-Add your name, date, and a description of the program.
+Samantha Cress 
+1/31/2023
 
 Listens for messages on the queue.
 This process runs continously. 
@@ -27,23 +26,30 @@ Terminal Reminders
 """
 
 # you can add multiple imports on one line 
-# but we don't recommend it for readability
-import pika, sys, os
-
+# but we don't recommend it for readability  #Changed this for readability
+import pika
+import sys
+import os
 
 # define a main function to run the program
 def main():
     # create a blocking connection to the RabbitMQ server
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHostt'))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host='LocalHost')) #Fixed error in host name
     # use the connection to create a communication channel
     channel = connection.channel()
     # use the channel to declare a queue
-    channel.queue_declare(queue='hello')
+    channel.queue_declare(queue='Hello')
+    channel.queue_declare(queue='My')
+    channel.queue_declare(queue='I')
+    channel.queue_declare(queue='This')
     # define a callback function to be called when a message is received
     def callback(ch, method, properties, body):
         print(" [x] Received %r" % body.decode())
     # use the channel to consume messages from the queue
-    channel.basic_consume(queue='hello', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='Hello', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='My', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='I', on_message_callback=callback, auto_ack=True)
+    channel.basic_consume(queue='This', on_message_callback=callback, auto_ack=True)
     # print a message to the console for the user
     print(' [*] Waiting for messages. To exit press CTRL+C')
     # start consuming messages
