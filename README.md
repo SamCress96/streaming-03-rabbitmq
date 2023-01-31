@@ -85,7 +85,7 @@ Each of the version 2 programs include an error as well.
 6. A function may - or may not - return a value. 
 7. When we open a connection, we should close the connection. 
 8. Which of the 4 files will always close() the connection? 
-   I belive the only file that won't close the connection is v1_listen_for_message, as it does not contain connection.close()
+   I believe the only file that won't close the connection is v1_listen_for_message, as it does not contain connection.close()
 3. Search GitHub for if __name__ == "__main__": 
 4. How many hits did you get? 
    26 million
